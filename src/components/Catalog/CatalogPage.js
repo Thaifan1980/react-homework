@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 
 import Container from "../Container/Container";
 import Header from "../Headers/Header";
@@ -42,9 +41,5 @@ class CatalogPage extends React.Component {
     );
   }
 }
-
-CatalogPage.propTypes = {
-  name: PropTypes.string
-};
 
 export default CatalogPage;

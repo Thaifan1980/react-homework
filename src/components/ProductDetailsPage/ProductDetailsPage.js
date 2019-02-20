@@ -1,6 +1,6 @@
 import React from "react";
-
 import { Redirect } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import Container from "../Container/Container";
 import Header from "../Headers/Header";
@@ -27,15 +27,15 @@ const ProductDetailsPage = props => {
         <p>${product.amount}</p>
       </div>
 
-      <button
-        type="button"
-        className="btn btn-primary"
-        onClick={props.history.goBack}
-      >
+      <button type="button" className="btn" onClick={props.history.goBack}>
         Back to list
       </button>
     </Container>
   );
+};
+
+ProductDetailsPage.propTypes = {
+  match: PropTypes.object
 };
 
 export default ProductDetailsPage;

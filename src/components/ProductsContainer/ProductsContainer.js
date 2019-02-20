@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 import ProductsService from "../../service/product.service";
 
@@ -26,6 +27,13 @@ const ProductsContainer = ({ category, name, manufacture, amount }) => {
       ))}
     </div>
   );
+};
+
+ProductsContainer.propTypes = {
+  category: PropTypes.string,
+  name: PropTypes.string,
+  manufacture: PropTypes.string,
+  amount: PropTypes.string
 };
 
 export default ProductsContainer;

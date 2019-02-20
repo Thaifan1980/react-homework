@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import ProductsService from "../../service/product.service";
 
 import "./FilterComponent.scss";
@@ -66,9 +65,5 @@ class FilterComponent extends React.Component {
     );
   }
 }
-
-FilterComponent.propTypes = {
-  name: PropTypes.string
-};
 
 export default FilterComponent;
