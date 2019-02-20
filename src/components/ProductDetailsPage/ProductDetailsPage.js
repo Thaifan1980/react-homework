@@ -25,11 +25,10 @@ const ProductDetailsPage = props => {
         <img src={product.image} alt={product.name} />
         <Header type="small">{product.name}</Header>
         <p>${product.amount}</p>
+        <button type="button" className="btn" onClick={props.history.goBack}>
+          Back to products
+        </button>
       </div>
-
-      <button type="button" className="btn" onClick={props.history.goBack}>
-        Back to list
-      </button>
     </Container>
   );
 };
