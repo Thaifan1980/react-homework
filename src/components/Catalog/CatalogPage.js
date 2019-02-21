@@ -1,12 +1,12 @@
 import React from "react";
 
 import Container from "../Container/Container";
-import Header from "../Headers/Header";
 
 import FilterComponent from "../FilterComponent/FilterComponent";
 import ProductsContainer from "../ProductsContainer/ProductsContainer";
 
 import "./CatalogPage.scss";
+import HeaderBig from "../Headers/HeaderBig";
 
 class CatalogPage extends React.Component {
   constructor() {
@@ -17,7 +17,7 @@ class CatalogPage extends React.Component {
   render() {
     return (
       <Container>
-        <Header>Catalog</Header>
+        <HeaderBig>Catalog</HeaderBig>
         <div className="catalog">
           <div className="column-left">
             <FilterComponent

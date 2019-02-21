@@ -5,10 +5,11 @@ import PropTypes from "prop-types";
 import "./Container.scss";
 
 const Container = props => {
+  // console.log(props.children);
   return <div className="container">{props.children}</div>;
 };
 
-Headers.propTypes = {
+Container.propTypes = {
   children: PropTypes.object
 };
 

@@ -1,14 +1,13 @@
 import React from "react";
 import Container from "../Container/Container";
 
-import Header from "../Headers/Header";
-
 import "./AboutPage.scss";
+import HeaderBig from "../Headers/HeaderBig";
 
 const AboutPage = () => {
   return (
     <Container className="about">
-      <Header>About</Header>
+      <HeaderBig>About</HeaderBig>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
         scelerisque odio pharetra, rhoncus velit eget, feugiat magna. Integer ac

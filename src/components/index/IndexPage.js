@@ -2,18 +2,19 @@ import React from "react";
 
 import Container from "../Container/Container";
 import ProductsContainer from "../ProductsContainer/ProductsContainer";
-import Header from "../Headers/Header";
 
 import ProductsService from "../../service/product.service";
+import HeaderBig from "../Headers/HeaderBig";
+import HeaderSmall from "../Headers/HeadeSmall";
 
 const IndexPage = () => {
   const categories = ProductsService.getUniqueCategory();
   return (
     <Container>
-      <Header>Welcome to our store</Header>
+      <HeaderBig>Welcome to our store</HeaderBig>
       {categories.map(category => (
         <div key={category}>
-          <Header type="small">{category}</Header>
+          <HeaderSmall>{category}</HeaderSmall>
           <ProductsContainer category={category} amount={"4"} />
         </div>
       ))}
